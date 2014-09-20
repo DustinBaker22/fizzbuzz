@@ -8,17 +8,23 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<div class="container">
-		<h1>FizzBuzz!</h1>
+	<form class="main">
+		<h1>FizzBuzz!</h1> 
 		<!-- Input fields for text and button -->
 			<input type="text" placeholder="Insert Number Here!" class="input">
 			<input type="button" value="ENTER" class="button">
 		<!-- Information on program -->
-			<p id="info">Info about the program.</p>
-	</div>
-		<!-- Output field for FizzBuzz log -->
-	<div class="output">
-		<p class="fizzbuzz"></p>
+			<p class="instrustions">
+			"Enter any whole number to play"
+			<span class="stripe">|</span>
+			"Any number divisible by 3 = Fizz"
+			<span class="stripe">|</span>
+			"Any number divisible by 5 = Buzz"
+			<span class="stripe">|</span>
+			"Any number divisible by both = FizzBuzz"
+			</p>
+			<ul class="list"></ul>
+		</form>
 	</div>
 	<footer>&copy Dustin Baker 2014</footer>
 </body>

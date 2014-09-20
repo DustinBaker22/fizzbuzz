@@ -1,23 +1,25 @@
+
 $(document).ready(function(){
 	$('.input').focus();
 	$('.button').on('click',function(){
-		$('.fizzbuzz').text(" ");
+		$('.output').text(" ");
 		var number=$('.input').val();
-	})
-})
-function(number){
-for (var i=1; i<=number; i++) {
+		doFizzBuzz(number);
+	});
+});
+function doFizzBuzz (number) {
+for (i=1; i<=number; i++) {
 	if(i%3===0 && i%5===0){
-		$('fizzbuzz').append("FizzBuzz"+",");
+		$('.list').append("<li class='fizz-buzz'>" + "FizzBuzz" + "</li>");
 	}
 	else if(i%3===0){
-		$('fizzbuzz').append("Fizz"+",");
+		$('.list').append("<li class='fizz-buzz'>" + "Fizz" + "</li>");
 	}
 	else if(i%5===0){
-		$('fizzbuzz').append("Buzz"+",");
+		$('.list').append("<li class='fizz-buzz'>" + "Buzz" + "</li>");
 	}
 	else {
-		$('fizzbuzz').append(i+",");
+		$('.list').append("<li>"+ i +"</li>");
 	}
 }
 };
